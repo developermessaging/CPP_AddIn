@@ -1,0 +1,51 @@
+HKCR
+{
+	CPPComAddIn.AddInConnect.1 = s 'AddInConnect Class'
+	{
+		CLSID = s '{B7F2A811-A392-43FF-82BF-8787E670243D}'
+	}
+	CPPComAddIn.AddInConnect = s 'AddInConnect Class'
+	{		
+		CurVer = s 'CPPComAddIn.AddInConnect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B7F2A811-A392-43FF-82BF-8787E670243D} = s 'AddInConnect Class'
+		{
+			ProgID = s 'CPPComAddIn.AddInConnect.1'
+			VersionIndependentProgID = s 'CPPComAddIn.AddInConnect'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{3A27CE94-CFA0-40FD-938E-DEB659461C6E}'
+			Version = s '1.0'
+		}
+	}
+}
+
+HKCU
+{
+    NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Office
+            {
+                NoRemove Outlook
+                {
+                    NoRemove Addins
+                    {
+                        CPPComAddIn.AddInConnect
+                        {
+                            val Description = s 'CPPComAddIn'
+                            val FriendlyName = s 'CPPComAddIn'
+                            val LoadBehavior = d 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
