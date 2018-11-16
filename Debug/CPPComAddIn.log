@@ -49,6 +49,10 @@
   Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\ocidl.acf
   ocidl.acf
   stdafx.cpp
-c:\users\anixi\documents\github\cpp_addin\stdafx.h(29): error C2006: '#import': expected a filename, found 'user-defined string literal'
-c:\users\anixi\documents\github\cpp_addin\stdafx.h(29): fatal error C1083: Cannot open type library file: 'c:\program files (x86)\microsoft sdks\windows\v10.0a\bin\netfx 4.6.1 tools\': Error loading type library/DLL.
-  
+  AddInConnect.cpp
+  CPPComAddIn.cpp
+  Generating Code...
+  CPPComAddIn_i.c
+  dllmain.cpp
+     Creating library C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddIn.lib and object C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddIn.exp
+  CPPComAddIn.vcxproj -> C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddIn.dll

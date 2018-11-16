@@ -3,7 +3,5 @@
   CPPComAddIn_p.c
   dlldata.c
   Generating Code...
-     Creating library C:\Users\anixi\Documents\GitHub\CPP_AddIn\Debug\CPPComAddInPS.lib and object C:\Users\anixi\Documents\GitHub\CPP_AddIn\Debug\CPPComAddInPS.exp
-  CPPComAddInPS.vcxproj -> C:\Users\anixi\Documents\GitHub\CPP_AddIn\Debug\CPPComAddInPS.dll
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1840,5): warning MSB3075: The command "regsvr32 /s "C:\Users\anixi\Documents\GitHub\CPP_AddIn\Debug\CPPComAddInPS.dll"" exited with code 5. Please verify that you have sufficient rights to run this command.
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(1852,5): error MSB8011: Failed to register output. Please try enabling Per-user Redirection or register the component from a command prompt with elevated permissions.
+     Creating library C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddInPS.lib and object C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddInPS.exp
+  CPPComAddInPS.vcxproj -> C:\Users\anixi\Source\Repos\CPP_AddIn\Debug\CPPComAddInPS.dll

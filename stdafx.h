@@ -25,6 +25,15 @@
 #include <atlctl.h>
 
 using namespace ATL;
-#import "C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\DESIGNER\MSADDNDR.OLB"\
-auto_rename auto_search raw_interfaces_only rename_namespace("AddinDesign")
+#import "libid:AC0714F2-3D04-11D1-AE7D-00A0C90F26F4" auto_rename auto_search raw_interfaces_only rename_namespace("AddinDesign")
+
+// Office type library (i.e., mso.dll).
+#import "libid:2DF8D04C-5BFA-101B-BDE5-00AA0044DE52" auto_rename auto_search raw_interfaces_only rename_namespace("Office")
+
+// Outlook type library (i.e., msoutl.olb).
+#import "libid:00062FFF-0000-0000-C000-000000000046" auto_rename auto_search raw_interfaces_only rename_namespace("Outlook")
+
+using namespace AddinDesign;
+using namespace Office;
+using namespace Outlook;
 
