@@ -1,0 +1,61 @@
+﻿  CPP_AddIn.idl
+  oaidl.idl
+  objidl.idl
+  unknwn.idl
+  wtypes.idl
+  wtypesbase.idl
+  basetsd.h
+  guiddef.h
+  Processing .\CPP_AddIn.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\shobjidl.idl
+  shobjidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\docobj.idl
+  docobj.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\shtypes.idl
+  shtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\comcat.idl
+  comcat.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\propidl.idl
+  propidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\prsht.idl
+  prsht.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\propsys.idl
+  propsys.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\StructuredQueryCondition.idl
+  StructuredQueryCondition.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ObjectArray.idl
+  ObjectArray.idl
+  shobjidl_core.idl
+  oaidl.acf
+  ocidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\shobjidl_core.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oaidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ocidl.acf
+  stdafx.cpp
+c:\users\catagh\desktop\nativecomaddin\nativecomaddin\cpp_addin\stdafx.h(33): warning C4278: 'CopyFile': identifier in type library 'C:\Program Files (x86)\Microsoft Office\Root\Office16\MSOUTL.OLB' is already a macro; use the 'rename' qualifier
+c:\users\catagh\desktop\nativecomaddin\nativecomaddin\cpp_addin\stdafx.h(33): warning C4278: 'PlaySound': identifier in type library 'C:\Program Files (x86)\Microsoft Office\Root\Office16\MSOUTL.OLB' is already a macro; use the 'rename' qualifier
+  Connect.cpp
+  CPP_AddIn.cpp
+  ItemWrapper.cpp
+  Generating Code...
+  dllmain.cpp
+  CPP_AddIn_i.c
+     Creating library C:\Users\catagh\Desktop\NativeComAddIn\NativeComAddIn\Debug\CPP_AddIn.lib and object C:\Users\catagh\Desktop\NativeComAddIn\NativeComAddIn\Debug\CPP_AddIn.exp
+  CPP_AddIn.vcxproj -> C:\Users\catagh\Desktop\NativeComAddIn\NativeComAddIn\Debug\CPP_AddIn.dll
