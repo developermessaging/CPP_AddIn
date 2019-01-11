@@ -30,5 +30,6 @@ using namespace AddinDesign;
 
 // Office type library (i.e., mso.dll).
 #import "libid:2DF8D04C-5BFA-101B-BDE5-00AA0044DE52" auto_rename auto_search raw_interfaces_only rename_namespace("Office")
-#import "C:\Program Files (x86)\Microsoft Office\Root\Office16\MSOUTL.OLB" raw_interfaces_only, raw_native_types, no_namespace, named_guids, auto_search
+#import "libid:00062FFF-0000-0000-C000-000000000046" raw_interfaces_only, raw_native_types, named_guids, auto_search rename_namespace("Outlook")
 using namespace Office;
+using namespace Outlook;
