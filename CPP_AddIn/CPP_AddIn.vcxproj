@@ -71,25 +71,27 @@
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <IncludePath>$(ProjectDir)$(Configuration);$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)$(Configuration);$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <IncludePath>$(ProjectDir)$(Configuration);$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)$(Configuration);$(LibraryPath)</LibraryPath>
     <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <IncludePath>$(ProjectDir)$(Configuration);$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)$(Configuration);$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <IncludePath>$(ProjectDir)$(Configuration);$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)$(Configuration);$(LibraryPath)</LibraryPath>
     <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
