@@ -3,7 +3,8 @@
 
 
 
-ItemWrapper::ItemWrapper(IDispatch * iDispItem)
+
+CItemWrapper::CItemWrapper(IDispatch * iDispItem)
 {
 	m_Item = iDispItem;
 	HRESULT hRes = S_OK;
@@ -33,7 +34,7 @@ ItemWrapper::ItemWrapper(IDispatch * iDispItem)
 	}
 }
 
-ItemWrapper::~ItemWrapper()
+CItemWrapper::~CItemWrapper()
 {
 	UnadviseMailItem();
 	if (m_Item)
@@ -42,7 +43,7 @@ ItemWrapper::~ItemWrapper()
 
 }
 
-void ItemWrapper::AdviseMailItem()
+void CItemWrapper::AdviseMailItem()
 {
 	if (m_Item)
 		if (SUCCEEDED(ItemEventSink::DispEventAdvise(m_Item, &__uuidof(ItemEvents_10))))
@@ -51,13 +52,13 @@ void ItemWrapper::AdviseMailItem()
 		}
 }
 
-void ItemWrapper::UnadviseMailItem()
+void CItemWrapper::UnadviseMailItem()
 {
 	if (m_Item && bListeningForEvents)
 		ItemEventSink::DispEventUnadvise(m_Item, &__uuidof(ItemEvents_10));
 }
 
-STDMETHODIMP ItemWrapper::Write(VARIANT_BOOL* isCancel)
+STDMETHODIMP CItemWrapper::Write(VARIANT_BOOL* isCancel)
 {
 	MessageBoxW(NULL, L"Cancelling write operation!", L"Native Addin", MB_OK);
 	*isCancel = VARIANT_TRUE;

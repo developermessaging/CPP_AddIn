@@ -6,47 +6,43 @@
 
 import "oaidl.idl";
 
-[
-	object,
-	uuid(91e702f2-d64d-48e3-b5dd-9afaeead3a00),
-	dual,
-	nonextensible,
-	pointer_default(unique)
-]
-interface IConnect : IDispatch
-{
-};
+[uuid(000C03A7-0000-0000-C000-000000000046)]
+interface IRibbonUI {};
 
-[
-	object,
-	uuid(3c8bd09f-3ba0-4992-be24-b6c17dc7e78a),
-	dual,
-	nonextensible,
-	pointer_default(unique)
-]
-interface IItemWrapper : IDispatch
-{
-};
+[uuid(000C0395-0000-0000-C000-000000000046)]
+interface IRibbonControl {};
+
 [
 	uuid(f3eda8a5-30af-4dc3-875b-075167f21b10),
 	version(1.0),
+	helpstring("CPP_AddIn 1.0 Type Library")
 ]
 library CPP_AddInLib
 {
+	// This is the IRibbonCallback implementation that allows implementing callback methods
+	// for ribbon controls
+	[
+			object,
+			uuid(0fea223e-70a6-43b3-aa0d-9f2c9fd69d23),
+			dual,
+			nonextensible,
+			helpstring("IRibbonCallback Interface"),
+			pointer_default(unique)
+	]
+	interface IRibbonCallback : IDispatch
+	{
+		[id(1), helpstring("OnCreateCustomView")] HRESULT OnCreateCustomView([in] IRibbonControl *pRibbonControl);
+	};
+
+	// This is the default Connect class
 	importlib("stdole2.tlb");
 	[
-		uuid(69eb1c58-6e7e-420e-b339-6271f804e966)
+		uuid(69eb1c58-6e7e-420e-b339-6271f804e966),
+		helpstring("Connect Class")
 	]
 	coclass Connect
 	{
-		[default] interface IConnect;
-	};
-	[
-		uuid(da1194fa-238a-4f0e-8f55-d01c37b39787)
-	]
-	coclass ItemWrapper
-	{
-		[default] interface IItemWrapper;
+		[default] interface IRibbonCallback;
 	};
 };
 

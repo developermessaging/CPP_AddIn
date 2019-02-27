@@ -30,6 +30,19 @@ using namespace AddinDesign;
 
 // Office type library (i.e., mso.dll).
 #import "libid:2DF8D04C-5BFA-101B-BDE5-00AA0044DE52" auto_rename auto_search raw_interfaces_only rename_namespace("Office")
-#import "libid:00062FFF-0000-0000-C000-000000000046" raw_interfaces_only, raw_native_types, named_guids, auto_search rename_namespace("Outlook")
+#import "libid:00062FFF-0000-0000-C000-000000000046" auto_rename auto_search raw_interfaces_only rename_namespace("Outlook")
 using namespace Office;
 using namespace Outlook;
+
+#define EC_HRES_MSG(_hRes, wszMessage) \
+	do { \
+		hRes = _hRes; \
+		if (FAILED(hRes)) \
+																{ \
+			std::string wszPrintMessage = "Error encountered when: "; \
+			wszPrintMessage += wszMessage; \
+			ATLTRACE(wszPrintMessage.c_str()); \
+			goto Error; \
+																} \
+								} while (0)
+

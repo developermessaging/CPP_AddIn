@@ -1,0 +1,15 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="CPP_AddIn" label="CPP_AddIn">
+        <group id="GroupFolderViews" label="FolderViews">
+          <button id="NewCustomViewButton"
+              imageMso="AccessListCustom"
+              size="large"
+              label="New Custom View" 
+                  onAction="OnCreateCustomView"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
